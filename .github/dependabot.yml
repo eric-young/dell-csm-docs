@@ -21,14 +21,14 @@ updates:
   # operator packages
   - package-ecosystem: docker
     directories:
-      - /bundle/manifests
+      - /
     labels:
       - dependencies
     schedule:
       # check daily
       interval: daily
       # at 6pm UTC
-      time: 18:00
+      time: '18:00'
     groups:
       operator:
         patterns:
